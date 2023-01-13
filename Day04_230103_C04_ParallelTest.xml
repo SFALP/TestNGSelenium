@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Test Suite">
+    <!-- Parallel, hem suite hem de test tag'i uzerinden de cagirilabilir.-->
+<!--Parallel="abc" syntax, suite tag'inda yazilsaydi, ve ="" icinde
+test yazsaydik, suite bazinda test olarak tanimlananlar ayni anda
+test edilmis olacakti-->
+
+    <test name="Parallel Test Tests" parallel="methods">
+        <classes>
+            <class name="Clarusway.tests.Day04_230103_C01_ParallelTest"></class>
+        </classes>
+    </test>
+</suite>

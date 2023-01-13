@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/sevba/IdeaProjects/CWTestNGSelenium">
+        <classes>
+            <class name="Clarusway.tests.Day01_221229_C01_TestNGAnnotations">
+                <methods>
+                    <include name="test01"/>
+                    <include name="test02"/>
+                </methods>
+            </class>
+            <class name="Clarusway.tests.Day01_221229_C02_Priority">
+                <methods>
+                    <include name="test02"/>
+                    <include name="test04"/>
+                    <include name="test01"/>
+                    <include name="test03"/>
+                    <include name="test05"/>
+                    <include name="test06"/>
+                </methods>
+            </class>
+            <class name="Clarusway.tests.Day01_221229_C03_DependsOn">
+                <methods>
+                    <include name="loginTest"/>
+                    <include name="registrationTest"/>
+                </methods>
+            </class>
+            <class name="Clarusway.tests.Day01_221229_C04_Enabled">
+                <methods>
+                    <include name="enabledTest"/>
+                    <include name="disabledTest"/>
+                </methods>
+            </class>
+            <class name="Clarusway.tests.Day01_221229_C05_TimeOut">
+                <methods>
+                    <include name="passedTest"/>
+                    <include name="timedOutTest"/>
+                    <include name="timedOutTest2"/>
+                </methods>
+            </class>
+            <class name="Clarusway.tests.Day01_221229_C06_Description">
+                <methods>
+                    <include name="loginTest"/>
+                    <include name="homePageTest"/>
+                </methods>
+            </class>
+            <class name="Clarusway.tests.Day01_221229_C09_AssertionTypes">
+                <methods>
+                    <include name="hardAssertion"/>
+                    <include name="softAssertion"/>
+                </methods>
+            </class>
+            <class name="Clarusway.tests.Day02_221230_C02_Parameters">
+                <methods>
+                    <include name="test01"/>
+                </methods>
+            </class>
+            <class name="Clarusway.tests.Day02_221230_C03_ParametersEx">
+                <methods>
+                    <include name="test01"/>
+                </methods>
+            </class>
+            <class name="Clarusway.tests.Day02_221230_C04_TestNGParametersSeleniumEx">
+                <methods>
+                    <include name="parametersTest"/>
+                </methods>
+            </class>
+            <class name="Clarusway.tests.Q95_221229_SoftHardAssertHw03__">
+                <methods>
+                    <include name="test"/>
+                </methods>
+            </class>
+            <class name="Clarusway.tests.Q96_221229_SoftHardAssertHw02__">
+                <methods>
+                    <include name="test01"/>
+                    <include name="test"/>
+                </methods>
+            </class>
+            <class name="Clarusway.tests.Q97_221229_SoftHardAssertHw01">
+                <methods>
+                    <include name="loginTest"/>
+                </methods>
+            </class>
+            <class name="Clarusway.tests.Q98_221229_DependsOnHw">
+                <methods>
+                    <include name="facebook"/>
+                </methods>
+            </class>
+            <class name="Clarusway.tests.Q99_221229_TestNG_Annotation">
+                <methods>
+                    <include name="test01"/>
+                    <include name="test02"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

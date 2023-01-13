@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parameters Suite">
+    <!--ACIKLAMA: Burada parametreli tanimlanmis methodlarla ilgili yapilabilecek testlerle ilgili ornekler cozulmustur.
+      Tanimlancak her bir parametre name ve value degeri tanimlanmasi gerekmektedir.
+      xml dosyasindaki Parametrenin name degeriyle, class icinde tanimlanan methodun uzerinde annotation olarak
+      tanimlanan parametrenin (@Parameters("isim")) parametre degeri tam ortusmelidir.
+
+      xml'de yer alan "Value" degerine atanmis olan deger'de method parametresi icinde tanimlanan kisma denk gelir
+      ve bu deger kisiden kisiye degisebilir.Class'da yer alan methodda (ÖR: public void test01(String value))
+      kismina denk gelecek olan value degeri, xml dosyasinda <parameter> tag'inda yer alan value degerinden gelmektedir.
+      Tum bu icin Parametreler, test seviyesinde de class seviyesinde de method seviyesinde de  olusturulabilmektedir.-->
+
+    <test name="Parameters Tests">
+        <parameter name="isim" value="Karl"></parameter>
+        <classes>
+
+            <class name="Clarusway.tests.Day02_221230_C02_Parameters">
+
+            </class>
+        </classes>
+    </test>
+
+</suite>

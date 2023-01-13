@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Groups Test Suite">
+
+    <!--ACIKLAMA: Burada ayni test teg'i icinde olan, group degeri "smoke" olan methodlar icin test islemi gerceklestirilmistir -->
+
+    <test name="Groups Test">
+        <groups>
+            <run>
+                <include name="smoke">
+
+                </include>
+            </run>
+        </groups>
+        <classes>
+            <class name="Clarusway.tests.Day01_221229_C07_Groups"></class>
+        </classes>
+    </test>
+</suite>

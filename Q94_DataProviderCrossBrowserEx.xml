@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="aaa Suite">
+    <test name="Browser-Chrome">
+        <parameter name="browser" value="Chrome"></parameter>
+        <classes>
+            <class name="Clarusway.tests.Q94_DataProviderCrossBrowserEx"></class>
+        </classes>
+    </test>
+    <test name="Browser-Firefox">
+        <parameter name="browser" value="Firefox"></parameter>
+        <classes>
+            <class name="Clarusway.tests.Q94_DataProviderCrossBrowserEx"></class>
+        </classes>
+    </test>
+</suite>

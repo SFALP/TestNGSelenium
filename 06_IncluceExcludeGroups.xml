@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Include Exclude Groups Suite">
+
+    <!--ACIKLAMA: Ilgili class'da tanimlanmis olan methodlara oncelikle grouplari belirtilir.
+    Bu group'larda genellikle test cesitlerinden(smoke/regression/unit etc) gruplandirma yapilir.
+    Asagidaki yapida da group'lari belirtilenler icin yapilacak teslerinin, "Suite" bazinda gerceklestirilmesi
+        isleminin ornegi yapilmistir.
+
+        Boylelikle; group bazinda yapilan testler, hangi class'da gerceklestirilecekse asagidaki siralamada oldugu sekliyle yazilir.
+        Buradaki kodda 2.bir class ismi de belirtilmis olsaydi; o class'da smoke iceren(include), regression icerip haric tutulan(exclude)
+        methodlar, her bir class icin ayri ayri test edilerek raporlanacakti.-->
+
+    <groups>
+        <run>
+            <include name="smoke"></include>
+            <exclude name="regression"></exclude>
+
+        </run>
+    </groups>
+    <test name="Include Exclude Groups Test">
+        <classes>
+            <class name="Clarusway.tests.Day02_221230_C01_TestNGXML_Groups"></class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Groups Test Suite">
+
+    <!--ACIKLAMA: Burada ayni class icin farkli test basliklari altinda ayni/farkli methodlarda atanmis olan
+    farkli group'lara ait olan()smoke/regression/unit) method'lar da test edilebilmektedir. -->
+
+    <test name="Smoke Test">
+        <groups>
+            <run>
+                <include name="smoke"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="Clarusway.tests.Day02_221230_C01_TestNGXML_Groups"></class>
+        </classes>
+    </test>
+
+    <test name="Regression Test">
+        <groups>
+            <run>
+                <include name="regression"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="Clarusway.tests.Day02_221230_C01_TestNGXML_Groups">
+
+            </class>
+        </classes>
+    </test>
+</suite>

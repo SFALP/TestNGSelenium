@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Running Package Suite">
+
+    <!--ACIKLAMA: PACKAGE bazinda test etmek icin bu komutlar kullanilir,
+Herhangi bir package(tests ismindeki package) altinda bulunan tum class'lar(18 adet)
+ayni anda test edilebilmektedir.-->
+
+    <test name="Running Package Tests">
+
+        <packages>
+            <package name="Clarusway.tests"></package>
+        </packages>
+    </test>
+</suite>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Browser Parameters Suite">
+<!--ACIKLAMA: Burada browser ozelinde parametre eslestirilmesi ve kullanimina diar calisma yapilmistir.
+Bu ornegin detayli hali 11_ParametersSeleniumEx isimli xml dostasinda bulunmaktadir.-->
+
+    <test name="Browser Parameters Tests">
+        <parameter name="browser" value="opera"></parameter>
+    <classes>
+        <class name="Clarusway.tests.Day02_221230_C03_ParametersEx"></class>
+    </classes>
+    </test>
+</suite>

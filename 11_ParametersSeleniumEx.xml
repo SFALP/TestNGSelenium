@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- TASK:
+Go to URL : https://www.amazon.com
+Search words: Java , Selenium
+Assert get text result est that the result text contains the searched Word Run tests from XML file
+
+Amazon sitesine chrome ve firefox browser'lariyla gidilerek arama bolumune Java ve Selenium ifadelerini
+xml koduyla yazdirin
+-->
+
+<suite name="Browser Parameters Suite">
+
+    <test name="Browser Parameters Tests 01">
+
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="aranacakKelime" value="Java"></parameter>
+
+        <classes>
+            <class name="Clarusway.tests.Day02_221230_C04_TestNGParametersSeleniumEx"></class>
+        </classes>
+
+    </test>
+    <test name="Browser Parameters Tests 02">
+
+        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="aranacakKelime" value="Selenium"></parameter>
+
+        <classes>
+            <class name="Clarusway.tests.Day02_221230_C04_TestNGParametersSeleniumEx"></class>
+        </classes>
+
+    </test>
+
+</suite>
